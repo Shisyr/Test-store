@@ -8,6 +8,8 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
+    <%= link_to 'Меню', categories_path %> |
+    <%= link_to 'Создать категорию', new_category_path %> |
     <%= link_to 'Регистрация', new_user_path %> |
     <%= link_to 'Все статьи', posts_path %>
     |
