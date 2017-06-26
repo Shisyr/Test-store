@@ -1,0 +1,34 @@
+<h1>Создать пользователь</h1>
+<%= form_for @user do |f| %>
+<div class="form-control">
+  <%= f.label :name %>
+  <%= f.text_field :name%>
+</div>
+<div class="form-control">
+  <%= f.label :last_name %>
+  <%= f.text_field :last_name %>
+</div>
+<div class="form-control">
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+</div>
+<div class="form-control">
+  <%= f.label :gender %>
+  <%= f.check_box :gender %>
+</div>
+<div class="form-control">
+  <%= f.label :age %>
+  <%= f.text_field :age %>
+</div>
+<div class="form-control">
+  <%= f.label :phone_number %>
+  <%= f.text_field :phone_number %>
+</div>
+<div class="form-control">
+  <%= f.label :password %>
+  <%= f.text_field :password %>
+</div>
+<div class="form-control">
+  <%= f.submit "Save" %>
+</div>
+<% end %>

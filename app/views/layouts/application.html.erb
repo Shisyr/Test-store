@@ -7,8 +7,8 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+    <%= link_to 'Регистрация', new_user_path %> |
     <%= link_to 'Все статьи', posts_path %>
     |
     <%= link_to 'Новая статья', new_post_path %>
