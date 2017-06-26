@@ -1,0 +1,44 @@
+<nav class="navbar navbar-custom">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a href="/posts"><img src="http://logosklad.ru/UserFiles/image/instagram/Insta_icon_logo.jpg" width="210" height="80"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="collapse">
+      <!-- <ul class="nav navbar-nav">
+        <li><a href="#">Link</a></li>
+      </ul> -->
+
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <li><a href="/users">History</a></li>
+        <li><a href="/posts/index">My Profile</a></li>
+        <li><a href="/sessions/new">Sign in</a></li> -->
+        <!-- <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span></a>
+
+          <ul class="dropdown-menu">
+            <li><a href="#">Edit</a></li>
+            <li><a href="#">Information</a></li>
+            <li><a href="#">Sign out</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Cancel</a></li>
+          </ul>
+        </li> -->
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+
+  </div>
+
+</nav>
+<hr>
+<div class="second-menu">
+  <%= link_to 'Меню', categories_path %> |
+  <%= link_to 'Создать категорию', new_category_path %> |
+  <%= link_to 'Регистрация', new_user_path %> |
+  <%= link_to 'Все статьи', posts_path %>|
+  <%= link_to 'Новая статья', new_post_path %>
+</div>
+<hr>

@@ -8,12 +8,16 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-    <%= link_to 'Меню', categories_path %> |
-    <%= link_to 'Создать категорию', new_category_path %> |
-    <%= link_to 'Регистрация', new_user_path %> |
-    <%= link_to 'Все статьи', posts_path %>
-    |
-    <%= link_to 'Новая статья', new_post_path %>
+    <%= render "partials/header" %>
+    <div class="container">
+      <% flash.each do |key, value| %>
+        <div class="panel panel-<%= key %>">
+          <div class="panel-heading">
+            <%= value %>
+          </div>
+        </div>
+      <% end %>
+      
     <%= yield %>
   </body>
 </html>
