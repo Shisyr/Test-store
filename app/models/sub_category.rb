@@ -1,5 +1,6 @@
 class SubCategory < ApplicationRecord
-  belongs_to :category, dependent: :destroy
-  validates :user_id, presence: true
+  belongs_to :category
   validates :title, presence: true
+  validates :active, presence: true
+  validates :category_id, presence: true
 end
