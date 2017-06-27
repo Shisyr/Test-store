@@ -1,0 +1,25 @@
+<h1>Creating of Product</h1>
+<%= form_for @product do |pr| %>
+<div class="create_products">
+  <%= pr.label :title %>
+  <%= pr.text_field :title %>
+</div>
+<div class="create_products">
+  <%= pr.label :description %>
+  <%= pr.text_area :description %>
+</div>
+<div class="create_products">
+  <%= pr.label :price %>
+  <%= pr.text_field :price %>
+</div>
+<div class="create_products">
+  <%= pr.label :sub_category_id %>
+  <%= pr.text_field :sub_category_id %>
+</div>
+<div class="create_products">
+  <%= pr.file_field :image %>
+</div>
+<div class="create_products">
+  <%= pr.submit "Create product" %>
+</div>
+<% end %>

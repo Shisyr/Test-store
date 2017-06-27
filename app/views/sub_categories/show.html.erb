@@ -1,1 +1,9 @@
 <h1><%= @sub_category.title %></h1>
+<%= link_to "Создать продукт", new_product_path %>
+<div class="container-products">
+  <% @products.each do  |products|%>
+  <div class="col">
+        <%= link_to products.title, products %>
+  </div>
+<% end %>
+</div>

@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :users
   resources :categories
   resources :sub_categories
+  resources :products
 
 
 end

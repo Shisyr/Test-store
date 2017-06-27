@@ -4,6 +4,7 @@ class SubCategoriesController < ApplicationController
   end
   def show
     @sub_category = SubCategory.find(params[:id])
+    @products = @sub_category.products
   end
   def new
     @sub_category = SubCategory.new
