@@ -19,7 +19,7 @@ class ProductsController < ApplicationController
     redirect_to products_path
   end
   def new
-    @product = Product.new
+    @product = Product.new(sub_category_id: params[:id])
   end
   def create
     @product = Product.new(product_params)

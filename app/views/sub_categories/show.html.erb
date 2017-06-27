@@ -1,10 +1,11 @@
 
 <h1><%= @sub_category.title %>
+  <span style="font-size: 14px;">
   <%= link_to 'Изменить', edit_sub_category_path(@sub_category) %>
-  <p>|</p>
   <%= link_to 'Удалить под категорию', sub_category_path(@sub_category), method: :delete, data: {confirm: 'Are you sure?'} %>
-</h1> |
-<%= link_to "Создать продукт", new_product_path %>
+</span>
+</h1>
+<%= link_to "Создать продукт", new_product_path(id: @sub_category.id) %>
 <div class="container-products">
   <% @products.each do  |products|%>
   <div class="col">

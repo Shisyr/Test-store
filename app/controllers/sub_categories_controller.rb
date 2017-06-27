@@ -20,7 +20,7 @@ class SubCategoriesController < ApplicationController
     redirect_to sub_categories_path
   end
   def new
-    @sub_category = SubCategory.new
+    @sub_category = SubCategory.new(category_id: params[:id])
   end
   def create
     @sub_category = SubCategory.new(sub_params)
