@@ -1,18 +1,2 @@
 <h1>Создать под категорий</h1>
-<%= form_for @sub_category  do |s| %>
-<div class="sub_category_creating">
-  <%= s.label :title %>
-  <%= s.text_field :title %>
-</div>
-<div class="sub_category_creating">
-  <%= s.label :active %>
-  <%= s.check_box :active%>
-</div>
-<div class="sub_category_creating">
-  <%= s.label :category_id %>
-  <%= s.text_field :category_id%>
-</div>
-<div class="sub_category_creating">
-  <%= s.submit "Create Sub_category" %>
-</div>
-<% end %>
+<%= render "form" %>

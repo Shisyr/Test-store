@@ -1,9 +1,15 @@
-<h1><%= @category.title %></h1>
+<h1><%= @category.title %>
+  <%= link_to 'Изменить', edit_category_path(@category) %>
+  <%= link_to 'Удалить эту категорию', category_path(@category), method: :delete, data: {confirm: 'Are you sure?'} %>
+
+</h1>
 <%= link_to 'Создать под категорию', new_sub_category_path %>
 <div class="container">
   <% @sub_categories.each do  |sub_categories|%>
   <div class="col">
         <%= link_to sub_categories.title, sub_categories %>
+  </div>
+  <div class="col">
   </div>
 <% end %>
 </div>

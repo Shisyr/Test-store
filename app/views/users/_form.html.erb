@@ -1,0 +1,27 @@
+<%= form_for @user do |f| %>
+<div class="form-control">
+  <%= f.text_field :name, placeholder: "Name" %>
+</div>
+<div class="form-control">
+  <%= f.text_field :last_name, placeholder: "Last_name"  %>
+</div>
+<div class="form-control">
+  <%= f.text_field :email, placeholder: "E-mail"  %>
+</div>
+<div class="form-control">
+  <%= f.label :gender %>
+  <%= f.check_box :gender %>
+</div>
+<div class="form-control">
+  <%= f.text_field :age, placeholder: "Age" %>
+</div>
+<div class="form-control">
+  <%= f.text_field :phone_number, placeholder: "Phone_number"  %>
+</div>
+<div class="form-control">
+  <%= f.text_field :password, placeholder: "Password"  %>
+</div>
+<div class="form-control">
+  <%= f.submit "Save" %>
+</div>
+<% end %>

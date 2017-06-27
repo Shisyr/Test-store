@@ -4,3 +4,5 @@
 <h4><%= @user.age %></h4>
 <h4><%= @user.gender %></h4>
 <h4><%= @user.phone_number %></h4>
+<%= link_to 'Изменить', edit_user_path(@user) %>
+<%= link_to 'Удалить этого пользователя', user_path(@user), method: :delete, data: {confirm: 'Are you sure?'} %>
